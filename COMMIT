@@ -1,0 +1,11 @@
+from account import Account
+
+
+class currentAccount(Account):
+    def _init_(self):
+        Account._init_(self)
+
+
+currentAccount = currentAccount()
+currentAccount.deposit(5000)
+currentAccount.withdraw(1500)
