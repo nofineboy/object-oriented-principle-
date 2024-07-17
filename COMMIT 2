@@ -1,0 +1,16 @@
+from account import Account
+
+
+class SavingsAccount(Account):
+    def _init_(self):
+        Account._init_(self)
+
+    def withdrawal(self, amount):
+        if amount < 2000:
+            supper() . withdraw(amount)
+        else:
+            print("you can not withdraw above your limit")
+
+
+SavingsAccount = SavingsAccount()
+SavingsAccount.withdraw(1000)
